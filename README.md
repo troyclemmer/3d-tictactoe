@@ -1,1 +1,2 @@
-# 3d-tictactoe
+# 3D TicTacToe
+### Troy Clemmer
