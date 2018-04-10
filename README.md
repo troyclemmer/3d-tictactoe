@@ -3,3 +3,4 @@
 
 ###### **Download:** https://github.com/troyclemmer/3d-tictactoe/archive/master.zip
 ###### *Game executable is in the dist folder*
+###### *Source is in the src folder*
