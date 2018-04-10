@@ -1,0 +1,43 @@
+02/05/2012 	Made a test display prototype
+02/06/2012 	Picked the display I wanted to use
+02/06/2012	Created a coordinate map array that has the coordinates of every spot on the board
+02/07/2012 	Started the front end
+02/21/2012 	Finished the front end
+02/24/2012	Figured out the checkwin math
+03/03/2012 	Made isFull() method in Board
+03/04/2012 	CheckWin2D method
+03/04/2012 	CheckWin Method
+03/14/2012 	Perfected the game flow and turn control
+03/27/2012 	Included in the CheckWin method the 4 diagonals that go through the center in all dimensions
+03/27/2012	The game now checks for draws
+03/27/2012	The header label now says that a player has won or if the game is a draw once the game is over
+03/27/2012	The game now doesn't allow input after the game ends
+03/27/2012	Added a button for restarting the application after the game ends
+03/27/2012	Fixed a bug that caused the 'tab' key to delete the display
+03/27/2012	Fixed a bug that caused the display to disappear after the game ended
+03/28/2012	Created a move preview mechanic, that, when a player enters input it highlights where their move will be going (only works in default board angle)
+03/28/2012	Alphabetized the color list
+03/28/2012	Filled in the square completely for spots that are claimed by a player instead of just the outline
+03/29/2012	Players now hold a 'win' field that is null unless they have won.  if they have won, it contains the coordinates of their winning line
+03/29/2012	Added a field "Player winner" to the Game class, which is null if the game isn't over or if there is no winner
+03/29/2012	After the game is finished, the winning line is highlighted in white.  This only works for the four main diagonals.
+03/29/2012	Added the rest of the winning lines to the highlighting win method
+03/30/2012	Started the AI class, and did the computeMove() method frame
+03/30/2012	Created a mock heuristic function in the AI class that is called by computeMove() which has the AI choose a random move, just for testing
+03/30/2012	Fixed the winning line highlighter, it now isn't a one time deal, if you change the angle but return to the default angle, it will rehighlight the winning line
+04/02/2012	Limited the angles a player can rotate the board.  It is limited so a player cannot rotate the board out of the window
+04/03/2012	Made a function in the AI class that checks for how many "n in a rows" there are, it will be used for the heuristic method
+04/03/2012	Made the thin white outline of the board go over the player colors
+04/04/2012	Eliminated the check for duplicates in the check n in a row method and checkWin method (now only checks the 76 winning lines with no overlap)
+04/04/2012	Fixed a bug that was causing some of the input labels to not be invisible when the game ends
+04/04/2012	Fixed a bug that was causing the tab button to disable the winning line preview after a game had ended
+04/04/2012	Fixed a bug that was causing the 'count n in a row' method to count diagonals that could never become winning lines as 2 and 3 in a rows
+04/04/2012	Updated the movePreview method in the Display class to work if the row is <= 0 no matter what the angle is
+04/04/2012	Made a function in AI that checks the number of n in a rows are blocked for the computer (defensive part of heuristic)
+04/05/2012	Made the hard heuristic
+04/07/2012	Doubled the weight on the 4 in a row piece of all the heuristics (so the AI definitely picks a winning move if it can, no matter what)
+04/15/2012	Changed the color choice of White to Silver (White is used for the move previews)
+04/15/2012	Added a turn counter to the game which gets displayed when the game ends, indicating how many turns the game lasted
+04/21/2012	Created the About menu item
+04/22/2012	Created the How to Play menu item
+04/22/2012	Added an option in the View menu item to display the number of turns completed
