@@ -1,2 +1,2 @@
 # 3D TicTacToe
-### Troy Clemmer
+### Troy Clemmer 2012
